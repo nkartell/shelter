@@ -78,7 +78,14 @@ button {
     width: 184px;
     height: 60px;
     margin-right: 573px;
+    cursor: pointer;
 }
+
+.header-logo-link {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .header-title {
@@ -126,6 +133,7 @@ button {
 
 .header-item:hover {
     font-weight: 700;
+    transition: all 0.4s ease-out;
 
 }
 
@@ -244,6 +252,7 @@ button {
 
 .our-friends-button:hover {
     background: #FDDCC4;
+    transition: all 0.4s ease-out;
 }
 
 .button-arrow {
@@ -256,6 +265,7 @@ button {
 
 .button-arrow:hover {
     background-color: #FDDCC4;
+    transition: all 0.4s ease-out;
 }
 
 .button-arrow-left {
@@ -271,10 +281,12 @@ button {
 .pet-card:hover .button-learn-more {
 
     background-color: #F1CDB3;
+    transition: all 0.4s ease-out;
 }
 
 .pet-card:hover {
     background-color: white;
+    transition: all 0.4s ease-out;
 }
 
 .pet-card:nth-child(-n+4) {
@@ -302,14 +314,17 @@ button {
 
 .navigation-button:nth-last-child(-n+2):hover {
     background-color: #FDDCC4;
+    transition: all 0.4s ease-out;
 }
 
 .navigation-button:nth-child(-n+2):hover {
     cursor: default;
+    transition: all 0.4s ease-out;
 }
 
 .navigation-button:nth-child(3) {
     background-color: #FDDCC4;
+    transition: all 0.4s ease-out;
 }
 
 /*footer styles start*/
