@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
-    margin: 0 auto;
-    width: 1280px;
+    margin: auto;
     overflow-x: hidden;
     scroll-behavior:smooth;
 }
@@ -24,7 +23,7 @@ body {
     margin: 0;
     background: #F6F6F6;
     height: 1812px;
-    max-width: 1280px;
+    
 }
 
 a {
@@ -49,7 +48,7 @@ button {
 
 .header {
 
-    max-width: 1280px;
+    
     height: 120px;
 
     color: #545454;
@@ -62,6 +61,8 @@ button {
     position: sticky;
     top: 0;
     z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -70,6 +71,8 @@ button {
     justify-content: space-between;
     width: 1200px;
     height: 60px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -160,9 +163,11 @@ button {
 
 .our-friends {
     background: #F6F6F6;
-    max-width: 1280px;
+    
     height: 1342px;
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -184,12 +189,14 @@ button {
 
 
 .pets-container {
-    width: 1200px;
-    height: 930px;
+    width: 1280px;
+    height: 960px;
     position: relative;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -332,7 +339,7 @@ button {
 /*footer styles start*/
 
 .footer {
-    max-width: 1280px;
+   
     height: 350px;
     padding-top: 40px;
     padding-left: 40px;
@@ -340,12 +347,17 @@ button {
     color: white;
 
     background: url('../../assets/images/footer-background.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-container {
     display: flex;
     width: 1200px;
     height: 310px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
