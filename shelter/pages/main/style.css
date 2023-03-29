@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     margin: auto;
     overflow-x: hidden;
+    scroll-behavior:smooth;
 }
 
 *,
@@ -47,15 +48,22 @@ button {
     cursor: pointer;
 }
 
-.wrapper {
-
-    background: url('../../assets/images/start-screen-background.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
+.background-header {
+    background: url('../../assets/images/start-screen-background.png');
+    background-size: cover ;
+    width: 100%;
     padding-top: 28px;
     height: 908px;
-
 }
+
+.wrapper {
+   max-width: 1280px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+
 
 .header-burger {
     display: none;
@@ -152,13 +160,19 @@ button {
 
 
 /* not only */
+.not-only-wrapper {
+    margin-left: 40px;
+}
+
 
 .not-only {
     width: 1200px;
     height: 728px;
-    margin-left: 40px;
-
+    
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .start-content {
     position: absolute;
@@ -224,10 +238,13 @@ button {
 /*about styles start*/
 
 .about {
+    
     height: 588px;
     padding-left: 40px;
+    padding-right: 40px;
     padding-top: 80px;
     background: #FFFFFF;
+   
 }
 
 .about-container {
@@ -238,6 +255,8 @@ button {
     justify-content: space-between;
     padding-left: 175px;
     padding-right: 175px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -304,6 +323,8 @@ button {
     max-width: 1280px;
     height: 877px;
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -451,19 +472,22 @@ button {
 /*help styles start*/
 
 .help {
-    max-width: 1280px;
+    
     height: 611px;
     padding-top: 80px;
     padding-left: 40px;
     padding-right: 40px;
     background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .help-container {
     width: 1200px;
     height: 431px;
-
     margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .help-list {
@@ -571,8 +595,11 @@ button {
 /*donation styles start*/
 
 .donation {
+    max-width: 1280px;
     height: 462px;
     padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -681,7 +708,7 @@ button {
 /*footer styles start*/
 
 .footer {
-    max-width: 1280px;
+    
     height: 350px;
     padding-top: 40px;
     padding-left: 40px;
@@ -689,13 +716,17 @@ button {
     color: white;
 
     background: url('../../assets/images/footer-background.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-container {
     display: flex;
     width: 1200px;
     height: 310px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contacts {
