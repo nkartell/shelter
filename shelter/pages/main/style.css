@@ -1240,8 +1240,8 @@ button {
 @media (max-width: 730px) {
 
     .puppy {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 50px;
+        margin-right: 10px;
     }
 
 
@@ -1252,6 +1252,10 @@ button {
 }
 
 @media (max-width: 700px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .not-only {
         justify-content: space-between;
@@ -1263,7 +1267,8 @@ button {
     }
 
     .contacts {
-        margin-right: 15px;
+        margin-right: 21px;
+        margin-right: 21px;
     }
 
     .location {
@@ -1600,8 +1605,8 @@ button {
     .footer {
         height: 809px;
         padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .footer-container {
@@ -1610,12 +1615,9 @@ button {
     }
 
     .contacts {
-        
-        margin: 0;
         height: 208px;
         margin-bottom: 43px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
 
     .footer-contact-title {
@@ -1644,6 +1646,19 @@ button {
         width: 260px;
         height: 269px;
     }
+
+    .email-icon {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .phone-icon {
+        margin-right: 20px;
+        margin-left: 20px;
+    
+    }
+
+    
 }
 
 @media (max-width: 480px) {
