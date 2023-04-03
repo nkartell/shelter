@@ -158,7 +158,7 @@ button {
 .not-only {
     display: flex;
     justify-content: center;
-    height: 728px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -681,7 +681,7 @@ button {
     padding-left: 40px;
     padding-right: 40px;
     color: white;
-    background: url('../../assets/images/footer-background.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background: url('../../assets/images/footer-background.png');
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
@@ -896,7 +896,7 @@ button {
     }
 
     .about-container {
-        gap: 60px;
+        gap: 20px;
     }
 
     .pets-list {
@@ -926,6 +926,7 @@ button {
 
     .background-header {
         height: 1165px;
+        padding-top: 30px;
     }
 
     .header {
@@ -943,8 +944,9 @@ button {
 
     .not-only {
         margin-left: 0px;
-        height: 673px;
         flex-direction: column;
+        justify-content: start;
+
     }
 
     .start-content {
@@ -962,11 +964,11 @@ button {
     .puppy {
         display: block;
         width: 569px;
-        height: 570px;
+        height: 593px;
         padding-left: 0;
         padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 169px;
+        margin-right: 30px;
     }
 
     .about {
@@ -998,7 +1000,8 @@ button {
 
     .about-pets {
         order: 1;
-        margin-left: 69px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*our friends styles start*/
@@ -1031,8 +1034,8 @@ button {
         
         height: 779px;
         padding-top: 80px;
-        padding-left: 69px;
-        padding-right: 69px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-bottom: 100px;
     }
 
@@ -1106,6 +1109,7 @@ button {
     }
 
     .contacts {
+        width: 278px;
         margin: 0;
         margin-left: 34px;
         margin-right: 60px;
@@ -1113,6 +1117,7 @@ button {
     }
 
     .location {
+        width: 278px;
         margin: 0;
         margin-right: 34px;
     }
@@ -1127,17 +1132,37 @@ button {
 
 @media (max-width: 768px) {
     .header { 
-        padding-left: 20px;
+        padding-left: 30px;
         justify-content: space-between;
     }
     
     .background-header {
         height: 1165px;
-        background: url('../../assets/images/start-screen-background'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+
     }
 
     .header-logo {
         margin-right: 66px;
+    }
+
+    
+    .help {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .contacts {
+        margin-right: 30px;
+        margin-left: 25px;
+    }
+
+    .location {
+        margin-right: 30px;
     }
 
     .header-nav {
@@ -1183,24 +1208,6 @@ button {
         bottom: 0;
     }
 
-    .help {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-
-
-
-@media (max-width: 767px) {
-
-    .contacts {
-        margin-right: 30px;
-        margin-left: 25px;
-    }
-
-    .location {
-        margin-right: 30px;
-    }
 }
 
 
@@ -1224,17 +1231,19 @@ button {
     }
 
     .help {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 }
 
 @media (max-width: 730px) {
-    .help {
-        padding-left: 20px;
-        padding-right: 20px;
+
+    .puppy {
+        margin-left: auto;
+        margin-right: auto;
     }
+
 
     .contacts {
         margin-left: 15px;
@@ -1244,9 +1253,13 @@ button {
 
 @media (max-width: 700px) {
 
+    .not-only {
+        justify-content: space-between;
+    }
+
     .puppy {
-        width: 519px;
-        height: 593px;
+        width: 400px;
+        height: 500px;
     }
 
     .contacts {
@@ -1344,15 +1357,14 @@ button {
         display: none;
     }
 
-    .puppy {
-
-        width: 400px;
-        height: 500px;
-    }
-
 }
 
 @media (max-width: 520px) {
+
+    .puppy {
+        width: 260px;
+        height: 270px;
+    }
 
     .not-only {
         align-items: center;
@@ -1598,7 +1610,7 @@ button {
     }
 
     .contacts {
-        width: 278px;
+        
         margin: 0;
         height: 208px;
         margin-bottom: 43px;
@@ -1619,7 +1631,7 @@ button {
     }
 
     .location {
-        width: 278px;
+       
         margin: 0;
         height: 222px;
         margin-bottom: 37px;
@@ -1638,10 +1650,7 @@ button {
     .background-header {
         height: 823px;
     }
-    .puppy {
-        width: 260px;
-        height: 270px;
-    }
+
 }
 
 
