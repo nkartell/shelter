@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,11 +28,11 @@ body {
 }
 
 
+
 a {
     text-decoration: none;
     transition: color 0.5s;
     color: black;
-   
     display: block;
     width:100%;
     height: 100%;
@@ -151,6 +151,8 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+
 
 
 /* not only */
@@ -1156,6 +1158,10 @@ button {
 
 @media (max-width: 767px) {
 
+    .body {
+        height: 5291px;
+    }
+
     .contacts {
         margin-right: 30px;
         margin-left: 25px;
@@ -1165,8 +1171,19 @@ button {
         margin-right: 30px;
     }
 
-    .header-nav {
-        display: none;
+
+    .overlay-active {
+        position: absolute;
+        background: rgba(41, 41, 41, 0.6);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+    
+
+    .header-nav {   
         position: fixed;
         width: 320px;
         height: 100vh;
@@ -1174,16 +1191,71 @@ button {
         right: 0;
         background-color: black;
         z-index: 10;
-        transform: translateX(100%);
-        transition: 0.5s all linear;
+        padding: 100px;
+        transition: 0.4s all linear;
+        transform: translateX(100vw);
+    }
+
+    .header-list {
+        width: 243px;
+        flex-direction: column;
+        gap: 51px;
+    }
+
+    .header-item {
+        width: 100%;
+        font-size: 32px;
+        margin-right: 38px;
+        margin-left: 38px;
+    }
+
+    .header-nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        z-index: 11;
+    }
+
+    .nav-close-line {
+        display: block;
+        width: 70%;
+        height: 2px;
+        background-color: #F1CDB3;
+        position: absolute;
+       
+    }
+
+    .nav-close-line:first-child {
+        transform: translateX(0) rotate(90deg);
+    }
+
+    .nav-close-line:nth-child(2) {
+        transform: translateX(50%) rotate(90deg);
+    }
+
+    .nav-close-line:last-child {
+        transform:  translateX(100%) rotate(90deg);
+    }
+
+    .header-nav-active {
+        transform: translateX(0);
+        padding: 0;
+        padding-top: 248px;
+        margin: 0;
+
     }
 
     .header-burger {
         display: block;
         width: 30px;
         height: 22px;
-        position: relative;
+        position: absolute;
+        top:40px;
+        right:40px;
         margin-top: 19px;
+        z-index: 5;
     }
 
     .burger-line {
@@ -1193,6 +1265,7 @@ button {
         background-color: #F1CDB3;;
         position: absolute;
         left: 0;
+        z-index: 5;
     }
 
     .burger-line-1 {
@@ -1217,9 +1290,6 @@ button {
         margin-right: 20px;
     }
 
-    .header-list {
-        width: 380px;
-    }
 
     .pets-container {
         margin-left: 10px;
@@ -1365,6 +1435,10 @@ button {
 }
 
 @media (max-width: 520px) {
+
+    .body {
+        height: 4684px;
+    }
 
     .puppy {
         width: 260px;
@@ -1665,6 +1739,8 @@ button {
     .background-header {
         height: 823px;
     }
+
+
 
 }
 
