@@ -1173,13 +1173,13 @@ button {
 
 
     .overlay-active {
-        position: absolute;
+        position: fixed;
         background: rgba(41, 41, 41, 0.6);
         top: 0;
         left: 0;
-        height: 100%;
-        width: 100%;
         z-index: 2;
+        height: 100vh;
+        width: 100vw;
     }
     
 
@@ -1209,42 +1209,13 @@ button {
         margin-left: 38px;
     }
 
-    .header-nav-close {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 60px;
-        right: 40px;
-        z-index: 11;
-    }
 
-    .nav-close-line {
-        display: block;
-        width: 70%;
-        height: 2px;
-        background-color: #F1CDB3;
-        position: absolute;
-       
-    }
-
-    .nav-close-line:first-child {
-        transform: translateX(0) rotate(90deg);
-    }
-
-    .nav-close-line:nth-child(2) {
-        transform: translateX(50%) rotate(90deg);
-    }
-
-    .nav-close-line:last-child {
-        transform:  translateX(100%) rotate(90deg);
-    }
 
     .header-nav-active {
         transform: translateX(0);
         padding: 0;
         padding-top: 248px;
         margin: 0;
-
     }
 
     .header-burger {
@@ -1255,7 +1226,12 @@ button {
         top:40px;
         right:40px;
         margin-top: 19px;
-        z-index: 5;
+        z-index: 25;
+    }
+
+    .header-burger-active {
+        transform: rotate(90deg);
+        transition: all 0.5s;
     }
 
     .burger-line {
@@ -1266,19 +1242,23 @@ button {
         position: absolute;
         left: 0;
         z-index: 5;
+        
     }
 
     .burger-line-1 {
         top: 0;
+        
     }
 
     .burger-line-2 {
         top: 50%;
         transform: translateY(-50%);
+        
     }
 
     .burger-line-3 {
         bottom: 0;
+        
     }
 
 }
