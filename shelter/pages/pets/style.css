@@ -635,7 +635,11 @@ button {
 
 @media (max-width: 767px) {
 
+    .html-scroll {
+        overflow: hidden;
+    }
 
+  
 
     .contacts {
         margin-right: 30px;

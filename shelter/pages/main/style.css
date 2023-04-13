@@ -1158,6 +1158,10 @@ button {
 
 @media (max-width: 767px) {
 
+    .html-scroll {
+        overflow: hidden;
+    }
+
     .body {
         height: 5291px;
     }
