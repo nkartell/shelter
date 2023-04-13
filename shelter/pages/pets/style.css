@@ -639,7 +639,6 @@ button {
         overflow: hidden;
     }
 
-  
 
     .contacts {
         margin-right: 30px;
@@ -656,7 +655,7 @@ button {
         height: 100vh;
         top: 0;
         right: 0;
-        background-color: black;
+        background-color: #292929;
         z-index: 10;
         transition: 0.4s all linear;
         transform: translateX(100vw);
